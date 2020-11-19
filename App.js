@@ -1,16 +1,16 @@
 import React from 'react';  
 import './App.css';  
-import BookSearch from "/Users/siewwoon/Mages/FS102/project/library/src/Component/Search Bar/BookSearch.js";
+import BookSearch from "./Component/Search Bar/BookSearch.js";
 import Footer from "./Component/Footer/Footer.js";
 import "./Component/Footer/Footer.css";
 import ControlledCarousel from './Component/Slider/Slider';
-import PopularList from "/Users/siewwoon/Mages/FS102/project/library/src/Component/Popular/PopularList.js";
-import Navbar from '/Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/Navbar.js';
+import Popular from "./Component/Popular/PopularList.js";
+import Navbar from './Component/NavBar/Navbar.js';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Catergories from "/Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/Catergories.js";
-import ContactUs from "/Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/ContactUs.js";
-import SignUp from "/Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/SignUp.js";
-import Home from "./Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/Home.js";
+import Catergories from "./Component/NavBar/Catergories.js";
+import ContactUs from "./Component/NavBar/ContactUs.js";
+import SignUp from "./Component/NavBar/SignUp.js";
+import Home from "./Component/NavBar/Home.js";
 
 
   
@@ -43,7 +43,7 @@ function App() {
     </div>
 
     <div>
-      <PopularList />
+      <Popular />
     </div>
 
     <div>

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {MenuItems} from '/Users/siewwoon/Mages/FS102/Project-Library/project/library/src/Component/NavBar/MenuItems.js';
+import {MenuItems} from './Component/NavBar/MenuItems.js';
 import {Link} from 'react-router-dom';
 import './Dropdown.css';
 

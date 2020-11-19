@@ -1,7 +1,7 @@
 import React, { useState } from "react";  
 import axios from 'axios';  
 import { Card } from 'react-bootstrap';  
-import "/Users/siewwoon/Mages/FS102/project/library/src/Component/Search Bar/BookSearch.css";
+import "./BookSearch.css";
 
 const apiKey = "AIzaSyDQfceMVLzrKegjreG5O7JrPngWxDz55Xw";
 

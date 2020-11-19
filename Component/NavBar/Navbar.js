@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {Button} from './Button';
 import {Link} from 'react-router-dom';
-import '/Users/siewwoon/Mages/FS102/project/library/src/Component/NavBar/Navbar.css';
+import './Navbar.css';
 import Dropdown from './Dropdown';
 
 function Navbar () {
