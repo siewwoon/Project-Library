@@ -4,7 +4,7 @@ import BookSearch from "./Component/Search Bar/BookSearch.js";
 import Footer from "./Component/Footer/Footer.js";
 import "./Component/Footer/Footer.css";
 import ControlledCarousel from './Component/Slider/Slider';
-import Popular from "./Component/Popular/PopularList.js";
+import PopularList from "./Component/Popular/PopularList.js";
 import Navbar from './Component/NavBar/Navbar.js';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Catergories from "./Component/NavBar/Catergories.js";
@@ -43,7 +43,7 @@ function App() {
     </div>
 
     <div>
-      <Popular />
+      <PopularList />
     </div>
 
     <div>
