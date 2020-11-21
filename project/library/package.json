@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "react-animated-heart": "^0.0.5",
-    "react-modal": "^3.11.2",
-    "react-router": "^5.2.0",
-    "react-router-dom": "^5.2.0"
-  }
-}
