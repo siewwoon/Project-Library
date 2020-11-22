@@ -4,7 +4,7 @@ import BookSearch from "./Component/Search Bar/BookSearch.js";
 import Footer from "./Component/Footer/Footer.js";
 import "./Component/Footer/Footer.css";
 import ControlledCarousel from './Component/Slider/Slider';
-import PopularList from "./Component/Popular/PopularList.js";
+import Popular from "./Component/Popular/PopularList.js";
 import Navbar from './Component/NavBar/Navbar.js';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Catergories from "./Component/NavBar/Catergories.js";
@@ -24,10 +24,6 @@ function App() {
   <Route path='/catergories' exact component={Catergories} />
   <Route path='/contactUs' exact component={ContactUs} />
   <Route path='/SignUp' exact component={SignUp} />
-
-
-
-
 </Switch>
 
 
@@ -43,7 +39,7 @@ function App() {
     </div>
 
     <div>
-      <PopularList />
+      <Popular />
     </div>
 
     <div>

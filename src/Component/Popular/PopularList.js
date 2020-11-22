@@ -30,8 +30,8 @@ function Popular() {
                         <h5 className="card-title">{book.volumeInfo.title}</h5>  
                         <Button className="btn btn-primary"  onClick={() => setModalIsOpen(true)}>Know more</Button>  
                         <Modal isOpen ={modalIsOpen}> 
-                        <h2> Modal title</h2>
-                        <p> Modal Body</p>
+                        <h2> {book.volumeInfo.title}</h2>
+                        <p> {book.volumeInfo.selfLink}</p>
                         <div>
                             <Button onClick={() => {
                                     return setModalIsOpen(false);

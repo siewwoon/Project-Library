@@ -33,12 +33,15 @@ function Navbar () {
         <>
         <nav className="navbar">
             <Link to='/' className='navbar-logo'>
-                HomeMovies
+                Community Library
             </Link>
+
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
             </div>
+
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+
                 <li className="nav-item">
                     <Link to='/' className="nav-links" onClick= {closeMobileMenu}>
                         Home
@@ -46,12 +49,10 @@ function Navbar () {
                 </li>
                 <li className="nav-item"
                     onMouseEnter = {onMouseEnter}
-                    onMouseLeave = {onMouseLeave}
-
-                    >
+                    onMouseLeave = {onMouseLeave}>
 
                     <Link to='/services' className="nav-links" onClick= {closeMobileMenu}>
-                        Categories <i className=' fas fa-caret-down' />
+                        About Us <i className=' fas fa-caret-down' />
                     </Link>
                     {dropdown && <Dropdown />}
                 </li>
