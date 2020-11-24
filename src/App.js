@@ -7,13 +7,12 @@ import ControlledCarousel from './Component/Slider/Slider';
 import Popular from "./Component/Popular/PopularList.js";
 import Navbar from './Component/NavBar/Navbar.js';
 import { BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import Catergories from "./Component/NavBar/Catergories.js";
+import AboutUs from "./Component/NavBar/AboutUs.js";
 import ContactUs from "./Component/NavBar/ContactUs.js";
-import SignUp from "./Component/NavBar/SignUp.js";
 import Home from "./Component/NavBar/Home.js";
 
 
-  
+
 function App() {  
   return (  
     <>
@@ -21,9 +20,8 @@ function App() {
  <Navbar />
 <Switch>
   <Route path='/' exact component={Home} />
-  <Route path='/catergories' exact component={Catergories} />
+  <Route path='/aboutUs' exact component={AboutUs} />
   <Route path='/contactUs' exact component={ContactUs} />
-  <Route path='/SignUp' exact component={SignUp} />
 </Switch>
 
 

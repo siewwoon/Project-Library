@@ -3,6 +3,9 @@ import axios from 'axios';
 import { Card, Button } from 'react-bootstrap';
 import "./PopularList.css";  
 import Modal from "react-modal";
+import Heart from "react-heart";
+
+
 
 function Popular() {  
     const [book, setBook] = useState("");  
@@ -16,7 +19,8 @@ function Popular() {
 
  
      const [modalIsOpen, setModalIsOpen] = useState(false);
-       
+
+
 
  return (
     <div className="containerb">  
@@ -28,16 +32,17 @@ function Popular() {
                     <Card.Img className="img" variant="top" src={book.volumeInfo.imageLinks !== undefined ? book.volumeInfo.imageLinks.thumbnail : 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80'} alt={book.title} />  
                     <Card.Body>  
                         <h5 className="card-title">{book.volumeInfo.title}</h5>  
-                        <Button className="btn btn-primary"  onClick={() => setModalIsOpen(true)}>Know more</Button>  
+                        <Heart />
+                        <Button className="btn btn-primary"  onClick={() => setModalIsOpen(true)}>Know more</Button> 
                         <Modal isOpen ={modalIsOpen}> 
-                        <h2> {book.volumeInfo.title}</h2>
-                        <p> {book.volumeInfo.selfLink}</p>
+                        <h2> {book.volumeInfo.description}</h2>
                         <div>
                             <Button onClick={() => {
                                     return setModalIsOpen(false);
                                 }}>Close</Button>
                         </div>
                         </Modal>
+            
                     </Card.Body>  
                 </Card>  
             </div>  
