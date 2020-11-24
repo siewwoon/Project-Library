@@ -1,6 +1,6 @@
 import React, { useState } from "react";  
 import axios from 'axios';  
-import { Card, Button } from 'react-bootstrap'; 
+import { Card, Button } from 'react-bootstrap';
 import "./BookSearch.css";
 import Modal from "react-modal";
 import Heart from "react-heart";
@@ -27,9 +27,7 @@ function BookSearch() {
             })  
     }  
 
-
     const [modalIsOpen, setModalIsOpen] = useState(false);
-
 
     return (  
         <form onSubmit={handleSubmit}>  
